@@ -70,21 +70,16 @@ h3 {
     top: 60%;
     text-align: center;
     font-size: large;
+    font-size: larger;
     font-weight: bold;
-    border: 2px purple ridge;
-    width: max-content;
-    margin-left: 30%;
 }
 
 .key.white h3 {
-    top: 60%
+    top: 65%
 }
 
 .key.black p {
     text-align: center;
     font-size: large;
     font-weight: bold;
-    border: 2px chartreuse ridge;
-    width: max-content;
-    margin-left: 8%;
 }
