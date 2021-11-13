@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #143F6B;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    display: flex;
+}
+
+.key {
+    height: calc(var(--width)*4);
+    width: var(--width);
+}
+
+.white {
+    --width: 70px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.black {
+    --width: 45px;
+    background-color: black;
+    border: 1px solid #333;
+    margin-left: calc(var(--width)/-2);
+    margin-right: calc(var(--width)/-2);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.white.active {
+    background-color: rgb(140, 101, 230);
+    box-shadow: 0 0 5px 5px rgb(1, 255, 77);
+}
+
+.black.active {
+    background-color: rgb(140, 101, 230);
+    box-shadow: 0 0 5px 5px rgb(1, 255, 77);
+}
+
+h3 {
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+
+.piano .key:hover {
+    background-color: rgb(140, 101, 230);
+    box-shadow: 0 0 5px 5px rgb(1, 255, 77);
+}
+
+.key.black {
+    color: white;
+    text-align: center;
+}
+
+.key.white p {
+    position: relative;
+    top: 60%;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border: 2px purple ridge;
+    width: max-content;
+    margin-left: 30%;
+}
+
+.key.white h3 {
+    top: 60%
+}
+
+.key.black p {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border: 2px chartreuse ridge;
+    width: max-content;
+    margin-left: 8%;
+}
