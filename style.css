@@ -69,13 +69,13 @@ h3 {
     position: relative;
     top: 60%;
     text-align: center;
-    font-size: large;
     font-size: larger;
     font-weight: bold;
 }
 
 .key.white h3 {
-    top: 65%
+    top: 60%;
+    font-size: x-large;
 }
 
 .key.black p {

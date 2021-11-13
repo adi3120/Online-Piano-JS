@@ -31,7 +31,6 @@ function playnote(key) {
 
     let noteAudio = document.getElementById(key.dataset.note);
     noteAudio.currentTime = 0;
-    console.log(noteAudio);
     noteAudio.play();
     key.classList.add('active');
     noteAudio.addEventListener("ended", () => {
@@ -39,5 +38,5 @@ function playnote(key) {
     })
 }
 
-const WHITE = ['a', 's', 'd', 'f', 'g', 'h', 'j'];
-let BLACK = ['w', 'e', 't', 'y', 'u'];
+const WHITE = ['1', '3', '5', '6', '8', '0', '=', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'z', 'c', 'b', 'n', ',', '/', "'"];
+let BLACK = ['2', '4', '7', '9', '-', 'w', 'e', 't', 'y', 'u', 'x', 'v', 'm', '.', ';'];
