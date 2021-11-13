@@ -9,12 +9,16 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .piano {
     display: flex;
+    margin-top: 0;
+    position: relative;
+    top: -50px;
 }
 
 .key {
@@ -27,6 +31,7 @@ body {
     background-color: white;
     border: 1px solid #333;
     border-radius: 10px;
+    box-shadow: 10px 10px 60px 10px cyan;
 }
 
 .black {
@@ -82,4 +87,12 @@ h3 {
     text-align: center;
     font-size: large;
     font-weight: bold;
+}
+
+body h1 {
+    flex: 0 0 100%;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 0 0 black;
 }
