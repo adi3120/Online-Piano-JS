@@ -32,6 +32,7 @@ body {
     border: 1px solid #333;
     border-radius: 10px;
     box-shadow: 10px 10px 60px 10px cyan;
+    transition: 200ms;
 }
 
 .black {
@@ -42,6 +43,7 @@ body {
     margin-right: calc(var(--width)/-2);
     z-index: 2;
     border-radius: 10px;
+    transition: 200ms;
 }
 
 .white.active {

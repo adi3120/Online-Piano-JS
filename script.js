@@ -3,11 +3,6 @@ let whiteKeys = document.querySelectorAll(".key.white");
 let blackKeys = document.querySelectorAll(".key.black");
 
 
-blackKeys.forEach(key => {
-    let head = key.querySelector("h3");
-    if (head == null) return;
-    head.style.color = "white"
-});
 
 
 keys.forEach(key => {
@@ -31,6 +26,7 @@ function playnote(key) {
 
     let noteAudio = document.getElementById(key.dataset.note);
     noteAudio.currentTime = 0;
+    noteAudio.volume = 1.0;
     noteAudio.play();
     key.classList.add('active');
     noteAudio.addEventListener("ended", () => {
